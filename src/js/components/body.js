@@ -8,12 +8,13 @@ export default class Body extends React.Component {
 	}
 	render() {
 		const style = {
-			marginLeft: "200px",
-			width: "calc(100vw - 200px)"
+			marginLeft: "190px",
+			width: "calc(100vw - 205px)",
 		}
+		
 		return (
 			<div style={style}>
-				<Table />
+				<Table/>
 			</div>
 		);
 	}
