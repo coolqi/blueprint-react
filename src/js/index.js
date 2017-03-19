@@ -10,7 +10,7 @@ export default class Index extends React.Component {
 		this.state = {
 			username: '',
 			token: '',
-			loginStatus: false
+			loginStatus: true
 		}
 	}
 
