@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router';
+import Menulink from './menulink.js';
 
 export default class MenuBar extends React.Component<{}, {}> {
     render() {
@@ -9,19 +9,19 @@ export default class MenuBar extends React.Component<{}, {}> {
     		float: "left"
     	}
         return (
-            <ul class="pt-menu pt-elevation-1 .pt-large" style={style}>
-			  <li class="pt-menu-header"><h6>Layouts</h6></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-layout-auto">Homepage</button></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-layout-circle">Circle</button></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-layout-grid">Grid</button></li>
-			  <li class="pt-menu-header"><h6>Views</h6></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-history">History</button></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-star">Favorites</button></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-envelope">Messages</button></li>
-			  <li class="pt-menu-header"><h6>Tables</h6></li>
-			  <li><button type="button" class="pt-menu-item pt-icon-help">table 1</button></li>
-			  <li><Link type="button" class="pt-menu-item pt-icon-chat">table 2</Link></li>
-			</ul>
+        	<div>
+	            <ul class="pt-menu pt-elevation-1 .pt-large" style={style}>
+				  <li class="pt-menu-header"><h6>Dashboard</h6></li>
+				  <li><Menulink to="/" class="pt-menu-item pt-icon-dashboard" onlyActiveOnIndex>Homepage</Menulink></li>
+				  <li><Menulink to="/chart" class="pt-menu-item pt-icon-timeline-bar-chart">Chart</Menulink></li>
+				  <li class="pt-menu-header"><h6>Table</h6></li>
+				  <li><Menulink to="/table" class="pt-menu-item pt-icon-th">Table 1</Menulink></li>
+				  <li><Menulink to="/table2" class="pt-menu-item pt-icon-th-list">Table 2</Menulink></li>
+				  <li class="pt-menu-header"><h6>Settings</h6></li>
+				  <li><Menulink to="/setting" class="pt-menu-item pt-icon-cog">Setting</Menulink></li>
+				  <li><Menulink to="/add-a-user" class="pt-menu-item pt-icon-new-person">Add Account</Menulink></li>
+				</ul>
+			</div>
         );
     }
  

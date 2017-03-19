@@ -3,9 +3,7 @@ export default (state = 0, action)=> {
 	switch(action.type) {
 		case 'LOGIN':
 			return  { token: state.token };
-			break;
 		default: 
 			return state;
-			break;
 	}
 }
