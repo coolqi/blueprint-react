@@ -12,7 +12,7 @@ export default class Index extends React.Component {
 			token: '',
 			loginStatus: true
 		}
-	}
+	};
 
 	// componentDidMount() {
 	// 	console.log('index: ' + this.state.username);
@@ -23,13 +23,13 @@ export default class Index extends React.Component {
 			username: name,
 			loginStatus: true
 		})
-	}
+	};
 
 	logOut() {
 		this.setState({
 			loginStatus: false
 		})
-	}
+	};
 
 	render() {
 		const style = {

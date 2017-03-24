@@ -8,7 +8,6 @@ export default class Header extends React.Component<{}, {}> {
 
 	componentDidMount() {
 		console.log(this.props.username);
-		// console.log(this.props.loginSuccess);
 	}
 
 	onClick() {

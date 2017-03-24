@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { createStore } from 'redux';
-import { Provider } from 'react-redux';
+// import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import Index from './js/index';
 import Homepage from './js/components/homepage.js';
@@ -17,7 +17,7 @@ export default class Root extends React.Component {
 		    <Router history = {hashHistory}>
 		        <Route path="/" component={Index}>
 			        <IndexRoute component={Homepage}/>
-			        	<Route path="/chart" component={Homepage}/>
+			        	<Route path="chart" component={Homepage}/>
 			        	<Route path="table" component={Table}/>
 			        	<Route path="table2" component={Table2}/>
 				      	<Route path="setting" component={Setting}/>
