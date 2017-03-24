@@ -2,3 +2,15 @@
 	display: block;
 	margin: 10px 0;
 }
+
+.pt-table {
+	width: 100%;
+}
+
+.active {
+	color: green;
+}
+
+.pt-toast-message {
+	color: red;
+}
